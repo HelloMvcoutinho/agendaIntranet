@@ -1,0 +1,56 @@
+#pesquisar input[type=text] {
+	width: 865px;
+	padding: 2px 2px;
+	margin: 4px 0px;
+	box-sizing: border-box;
+
+}
+#pesquisar{
+	font-family: Libre Franklin;
+	font-size: 16px;
+}
+
+#scrollbar{
+	overflow-x:auto; 
+	width: 865px; 
+	height: 100px; 
+	border:solid 1px #000000;
+
+}
+
+#scrollbar table{
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+#scrollbar thead th{
+	position: sticky;
+	top:0;
+	border-right: 1px solid #000000;
+	text-align: left;
+	background: rgb(238, 238, 238);
+	padding-left: 5px;
+}
+#scrollbar tr:hover{
+	background-color: #CEDBEF;
+}
+table tr{
+	font-family: sans-serif;
+	font-size: 13px;
+	border-right: 1px solid #000000;
+
+}
+table td{
+	font-family: sans-serif;
+	font-size: 13px;
+	border-right: 1px solid #000000;
+	padding-left: 5px;
+}
+table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+table tr{
+	/*width: 100%;*/
+    white-space: nowrap;
+   }

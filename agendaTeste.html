@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8"/>
+    <!--<link rel="stylesheet" type="text/css" href="estilo.css"/>-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script> 
+    <script type="text/javascript" src="script.js"></script>
+	<head>
+		<title>Agenda II</title>
+		<style type="text/css">
+			/*#pesquisar{
+				width: 840px;
+				
+			}
+
+			#pesqisar table{
+				width: 840px;
+				border-collapse: collapse;
+			}
+
+			#pesquisar tr th{
+				text-align: left;
+				border: 1px solid #000000;
+				top: 0;
+				background: rgb(238, 255, 0);
+			}*/
+
+			#pesquisar input[type=text] {
+  				width: 842px;
+  				padding: 2px 8px;
+  				margin: 4px 0px;
+  				box-sizing: border-box;
+			}
+
+			#scrollbar{
+				 overflow-x:auto; 
+				 width: 840px; 
+				 height: 100px; 
+				 border:solid 1px #000000;
+			}
+			
+			#scrollbar table{
+				width: 100%;
+				border-collapse: collapse;
+			}
+
+			#scrollbar thead th{
+				position: sticky;
+				top:0;
+				border-right: 1px solid #000000;
+  				text-align: left;
+				background: rgb(238, 255, 0);
+			}
+
+			table tr td{
+				border-right: 1px solid #000000;
+			}
+
+			#scrollbar tr:hover{background-color: #CEDBEF;}	
+		</style>
+	</head>
+	<body>
+		<div id ="pesquisar">
+				<form>
+					<label for="txtColuna1">Para pesquisar, digite abaixo o nome ou sobrenome do funcionário:</label><br>
+                    <input type="text" id="txtColuna1"/>   
+				</form>
+				<!--
+			<table>	
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Nome do Cliente</th>
+						<th>Email</th>
+						<th>Telefone(s)</th>
+						<th>Endereço</th>
+					</tr>
+				</thead>
+			</table>-->
+		</div>
+
+		<div id ="scrollbar"> 	
+	    <table id="myTable">
+	        <thead>
+	            <tr>
+	                <th onclick="sortTable(document.getElementById('myTable'),'asc',0)">Nome</th>
+	                <th>Email</th>
+	                <th>Telefone(s)</th>
+	                <th>Endereço</th>
+	            </tr>
+	        </thead>
+	        <tbody>
+	            <tr>
+	                <td>Mara Castro</td>
+	                <td>marciocastro@email.com</td>
+	                <td>(21) 1234-56789</td>
+	                <td>Endereço do cliente 1</td>
+	            </tr>
+	            <tr>
+	                <td>Bia da Silva</td>
+	                <td>joao@mail.com</td>
+	                <td>(83) 9876-5432</td>
+	                <td>Endereço do cliente 2</td>
+	            </tr>
+	            <tr>
+	                <td>Carlos Pereira</td>
+	                <td>pedro@seuemail.com</td>
+	                <td>(85) 3221-3221</td>
+	                <td>Endereço do cliente 3</td>
+	            </tr>
+	            <tr>
+	                <td>Diego Castro</td>
+	                <td>marciocastro@email.com</td>
+	                <td>(21) 1234-56789</td>
+	                <td>Endereço do cliente 1</td>
+	            </tr>
+	            <tr>
+	                <td>João da Silva</td>
+	                <td>joao@mail.com</td>
+	                <td>(83) 9876-5432</td>
+	                <td>Endereço do cliente 2</td>
+	            </tr>
+	            <tr>
+	                <td>Max</td>
+	                <td>pedro@seuemail.com</td>
+	                <td>(85) 3221-3221</td>
+	                <td>Endereço do cliente 3</td>
+	            </tr>
+	            <tr>
+	                <td>Marcio Castro</td>
+	                <td>marciocastro@email.com</td>
+	                <td>(21) 1234-56789</td>
+	                <td>Endereço do cliente 1</td>
+	            </tr>
+	            <tr>
+	                <td>Kamilla da Silva</td>
+	                <td>joao@mail.com</td>
+	                <td>(83) 9876-5432</td>
+	                <td>Endereço do cliente 2</td>
+	            </tr>
+	            <tr>
+	                <td>Jose Pereira</td>
+	                <td>pedro@seuemail.com</td>
+	                <td>(85) 3221-3221</td>
+	                <td>Endereço do cliente 3</td>
+				</tr>                
+	        </tbody>
+	    </table>
+	    <iframe src="http://localhost/agenda/"style="border:none" height="200" width="900" title="Agenda"></iframe>
+	</div>	
+	</body>
+</html>
